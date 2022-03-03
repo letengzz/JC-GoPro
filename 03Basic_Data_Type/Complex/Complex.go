@@ -12,6 +12,6 @@ func main() {
 	c1 = 1 + 2i
 	var c2 complex128
 	c2 = 2 + 3i
-	fmt.Println(c1)
-	fmt.Println(c2)
+	fmt.Println(c1) //(1+2i)
+	fmt.Println(c2) //(2+3i)
 }

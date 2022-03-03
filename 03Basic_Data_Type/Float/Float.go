@@ -19,6 +19,6 @@ func main() {
 		f3         = 9.9
 	)
 	f4 := 90.3
-	fmt.Printf("f1:%.2f f2:%.2f f3:%.2f f4:%.2f\n", f1, f2, f3, f4)
-	fmt.Printf("f1的类型:%T f2的类型:%T f3的类型:%T f4的类型:%T", f1, f2, f3, f4)
+	fmt.Printf("f1:%.2f f2:%.2f f3:%.2f f4:%.2f\n", f1, f2, f3, f4)   //f1:4.50 f2:69.40 f3:9.90 f4:90.30
+	fmt.Printf("f1的类型:%T f2的类型:%T f3的类型:%T f4的类型:%T", f1, f2, f3, f4) //f1的类型:float32 f2的类型:float64 f3的类型:float64 f4的类型:float64
 }

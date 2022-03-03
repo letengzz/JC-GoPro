@@ -9,7 +9,7 @@ forloop1:
 			if i == 2 && j == 2 {
 				continue forloop1
 			}
-			fmt.Printf("%v-%v\n", i, j)
+			fmt.Printf("%v-%v\n", i, j) //没有2-2
 		}
 	}
 }

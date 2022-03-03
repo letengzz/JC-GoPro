@@ -9,6 +9,5 @@ func main() {
 	mapSlice[0] = make(map[string]int, 8) //完成了map的初始化
 
 	mapSlice[0]["你好"] = 100
-	fmt.Println(mapSlice)
-
+	fmt.Print(mapSlice) //[map[你好:100] map[] map[] map[] map[] map[] map[] map[]]
 }

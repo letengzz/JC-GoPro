@@ -15,5 +15,5 @@ Go 使用了特殊的 rune 类型来处理 Unicode，
 func main() {
 	var a byte = 'a'
 	var b rune = '好'
-	fmt.Printf("byte:%T rune:%T", a, b)
+	fmt.Printf("byte:%T rune:%T", a, b) //byte:uint8 rune:int32
 }

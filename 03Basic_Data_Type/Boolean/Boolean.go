@@ -14,5 +14,5 @@ func main() {
 	var a bool = true
 	var b = false
 	c := true
-	fmt.Printf("%t %t %t", a, b, c)
+	fmt.Printf("%t %t %t", a, b, c) //true false true
 }
