@@ -18,14 +18,24 @@ func main() {
 
 	//基于数组得到切片
 	var intArr = [5]int{1, 2, 3, 4}
+
+	//简单切片表达式: a[low : high]
+	//从数组a中选出`1<=索引值<4`的元素组成切片s，
+	//得到的切片`长度=high-low` 容量等于得到的切片的底层数组的容量
 	intSlice := intArr[1:3]
-	fmt.Println(intSlice)        //[2 3]
-	fmt.Printf("%T\n", intSlice) //[]int
+
+	//完整切片表达式: a[low : high : max]
+	//容量设置为`max-low`
+	//在完整切片表达式中只有第一个索引值（low）可以省略；它默认为0
+	intSlice2 := intArr[0:1:3]
+
+	fmt.Println(intSlice, intSlice2)                                //[2 3]
+	fmt.Printf("intSlice:%#v intSlice2:%#v\n", intSlice, intSlice2) //[]int
 
 	//切片再次切片
-	intSlice2 := intSlice[0:len(intSlice)]
+	intSlice3 := intSlice[0:len(intSlice)]
 	fmt.Println(intSlice2)        //[2 3]
-	fmt.Printf("%T\n", intSlice2) //[]int
+	fmt.Printf("%T\n", intSlice3) //[]int
 
 	//通过make函数构造切片
 	d := make([]int, 3, 10)
