@@ -10,8 +10,8 @@ func modify2(y *int) {
 }
 func main() {
 	a := 10
-	modify(a) //不会修改值
-	fmt.Println(a)
+	modify(a)      //不会修改值
+	fmt.Println(a) //10
 	modify2(&a)
-	fmt.Println(a)
+	fmt.Println(a) //100
 }
